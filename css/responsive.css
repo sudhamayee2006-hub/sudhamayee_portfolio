@@ -1,0 +1,107 @@
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:992px){
+
+.hero-content{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:40px;
+}
+
+.hero-text p{
+    margin:auto;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero-image img{
+    width:280px;
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.navbar{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#menuBtn{
+    display:block;
+}
+
+#navLinks{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#111;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+    z-index:9999;
+}
+
+#navLinks.active{
+    display:flex;
+}
+
+#navLinks li{
+    margin:15px 0;
+}
+
+.hero-content{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-image img{
+    width:240px;
+}
+
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.social{
+    justify-content:center;
+}
+
+.theme{
+    display:none;
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width:480px){
+
+.hero-text h1{
+    font-size:36px;
+}
+
+.hero-text h2{
+    font-size:24px;
+}
+
+.hero-image img{
+    width:200px;
+}
+
+}
