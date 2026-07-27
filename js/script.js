@@ -372,3 +372,60 @@ window.addEventListener("scroll", () => {
     });
 
 });
+/* ==========================================
+   CREATIVE HIGHLIGHTS COUNTER
+========================================== */
+
+const counters = document.querySelectorAll(".counter");
+let counterStarted = false;
+
+function startCounters() {
+
+    if (counterStarted) return;
+
+    const section = document.querySelector(".highlights");
+
+    if (!section) return;
+
+    const sectionTop = section.getBoundingClientRect().top;
+
+    if (sectionTop < window.innerHeight - 120) {
+
+        counterStarted = true;
+
+        counters.forEach(counter => {
+
+            const target = +counter.getAttribute("data-target");
+
+            let count = 0;
+
+            const increment = Math.ceil(target / 60);
+
+            const updateCounter = () => {
+
+                count += increment;
+
+                if (count >= target) {
+
+                    counter.textContent = target;
+
+                } else {
+
+                    counter.textContent = count;
+
+                    requestAnimationFrame(updateCounter);
+
+                }
+
+            };
+
+            updateCounter();
+
+        });
+
+    }
+
+}
+
+window.addEventListener("scroll", startCounters);
+window.addEventListener("load", startCounters);

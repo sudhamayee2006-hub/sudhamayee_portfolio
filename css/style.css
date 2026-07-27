@@ -1034,3 +1034,185 @@ footer p{
     margin-top:5px;
 
 }
+/* ==========================================
+   CREATIVE HIGHLIGHTS
+========================================== */
+
+.highlights{
+    padding:90px 0;
+}
+
+.highlight-subtitle{
+    text-align:center;
+    color:#bdbdbd;
+    max-width:650px;
+    margin:15px auto 60px;
+    line-height:1.8;
+}
+
+.highlights-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.highlight-card{
+
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:20px;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#D4AF37;
+
+    box-shadow:0 15px 40px rgba(212,175,55,.18);
+
+}
+
+.highlight-card i{
+
+    font-size:42px;
+
+    color:#D4AF37;
+
+    margin-bottom:20px;
+
+}
+
+.highlight-card h3{
+
+    font-size:42px;
+
+    color:#fff;
+
+    margin-bottom:12px;
+
+}
+
+.highlight-card p{
+
+    color:#cfcfcf;
+
+    font-size:16px;
+
+    letter-spacing:.5px;
+
+}
+
+@media(max-width:768px){
+
+.highlight-card{
+
+padding:30px 20px;
+
+}
+
+.highlight-card h3{
+
+font-size:34px;
+
+}
+
+}
+/* ==========================================
+   WHY WORK WITH ME
+========================================== */
+
+.why-work{
+    padding:90px 0;
+}
+
+.why-subtitle{
+    max-width:700px;
+    margin:15px auto 60px;
+    text-align:center;
+    color:#bdbdbd;
+    line-height:1.8;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.why-card{
+
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:.4s ease;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#D4AF37;
+
+    box-shadow:0 15px 35px rgba(212,175,55,.18);
+
+}
+
+.why-card i{
+
+    font-size:42px;
+
+    color:#D4AF37;
+
+    margin-bottom:20px;
+
+}
+
+.why-card h3{
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.why-card p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+@media(max-width:768px){
+
+.why-work{
+
+padding:70px 0;
+
+}
+
+}
