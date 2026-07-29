@@ -1216,3 +1216,65 @@ padding:70px 0;
 }
 
 }
+/*=================================
+      PREMIUM BRAND LOGO
+=================================*/
+
+.logo-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+}
+
+.logo-brand img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 0 12px rgba(212,175,55,.35);
+    transition:.35s ease;
+}
+
+.logo-brand img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(212,175,55,.65);
+}
+
+.brand-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1.1;
+}
+
+.brand-text h2{
+    margin:0;
+    color:#D4AF37;
+    font-size:1.35rem;
+    font-weight:700;
+}
+
+.brand-text span{
+    color:#bdbdbd;
+    font-size:.72rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-top:2px;
+}
+@media (max-width:768px){
+
+.logo-brand img{
+    width:36px;
+    height:36px;
+}
+
+.brand-text h2{
+    font-size:1.1rem;
+}
+
+.brand-text span{
+    font-size:.62rem;
+    letter-spacing:1px;
+}
+
+}
