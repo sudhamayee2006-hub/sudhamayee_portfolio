@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://sudhamayee2006-hub.github.io/sudhamayee_portfolio/sitemap.xml
