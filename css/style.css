@@ -143,6 +143,8 @@ header{
     font-size:62px;
     margin:15px 0;
     line-height:1.2;
+    color:#ffffff;
+    text-shadow:0 0 15px rgba(212,175,55,0.20);
 }
 
 .hero-text h2{
@@ -220,7 +222,7 @@ header{
 }
 
 .hero-image img:hover{
-    transform:scale(1.03);
+    transform:scale(1.03) translateY(-5px);
 }
 
 .hero-image img:hover{
@@ -1283,4 +1285,37 @@ padding:70px 0;
     letter-spacing:1px;
 }
 
+}
+.hero-highlight{
+    margin-top:18px;
+    color:#D4AF37;
+    font-size:16px;
+    font-weight:500;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+.about-highlights{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.about-highlights span{
+    background:rgba(212,175,55,.12);
+    color:#D4AF37;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:15px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    border:1px solid rgba(212,175,55,.25);
+    transition:.3s ease;
+}
+
+.about-highlights span:hover{
+    background:#D4AF37;
+    color:#000;
 }
